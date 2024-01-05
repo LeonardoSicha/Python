@@ -83,3 +83,24 @@ else:
     print("El dato ingresado tiene que tener un solo caracter.")
 
 #Ejercicio 10
+a=float(input("Ingresa la coeficiente a: "))
+c=float(input("Ingresa la coeficiente c: "))
+b=float(input("Ingresa la coeficiente b: "))
+
+from math import sqrt
+
+if a!=0:
+    discriminante=(b**2)-4*a*c
+    if discriminante>0:
+        print("La ecuación tiene dos soluciones reales diferentes.")
+        x1=(-b+sqrt(discriminante))/(2*a)
+        x2=(-b-sqrt(discriminante))/(2*a)
+        print("Las soluciones son {} y {}.".format(x1,x2))
+    elif discriminante==0:
+        print("La ecuación tiene dos soluciones reales iguales.")
+        x=(-b)/(2*a)
+        print("La solución es {}.".format(x))
+    else:
+        print("La ecuación no tiene soluciones reales.")
+else:
+    print("No hay solución. El coeficiente 'a' debe ser distinto de 0.")
