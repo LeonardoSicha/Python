@@ -1,2 +1,2 @@
-print("Roskete marción")
-print("MArica")
+Comp=7==float("7")
+print(Comp)
