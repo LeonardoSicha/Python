@@ -72,6 +72,14 @@ else:
     print("La palabra {} no empieza por mayúscula.".format(word))
 
 #Ejercicio 9
-
+letter=input("Introduzaca una letra: ")
+if len(letter)==1:
+    letter=letter.lower()
+    if letter in ["a","e","i","o","u"]:
+        print("El caracter ingresado es la vocal {}".format(letter))
+    else:
+        print("El caracter ingresado no es una vocal, es la consonate {}.".format(letter))
+else:
+    print("El dato ingresado tiene que tener un solo caracter.")
 
 #Ejercicio 10
