@@ -9,4 +9,4 @@ while n<=b:
     n+=1
 
 if n==b+1:
-    print("No hay números divisibles entre 2,3 y 5.")    
+    print("No hay números divisibles entre 2,3 y 5.")
